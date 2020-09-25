@@ -1,4 +1,11 @@
 # 手把手在taro3使用vue3
+本文目录如下：
+- Vue3新特性介绍：Composition API、Teleport、Fragments、语法糖
+- taro3如何安装
+- taro3 demo使用Vue3
+- taro3如何编译
+- 结论
+- 推荐文章和参考文章
 
 ##  Vue3新特性
 Vue3发布后，比较显著的新特性包括以下4点：
@@ -371,6 +378,12 @@ npm run build:h5
 
 ![编译](https://img14.360buyimg.com/imagetools/jfs/t1/130580/10/10663/65179/5f6c6ffcEdda97e88/2359dcf9c4603c4c.jpg)
 
+##  结论：在taro3中可随意使用Vue3
+我们将上诉几个demo的组件整合在项目中，访问以下地址：
+
+[demo](https://lillian98.github.io/vue3/dist/#/pages/index/index)
+
+在taro3中使用到的Vue3新特性都能正常表现，没有额外转换工作。
 
 推荐文章：
 - [Vue3和React hooks对比](https://zhuanlan.zhihu.com/p/133819602)
