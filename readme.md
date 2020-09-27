@@ -283,7 +283,7 @@ export default {
 这个我们已经在上面的例子里运用了，完全没问题。
 
 ### script setup 语法糖
-我们尝试一下 `<style setup>` ，组件里的代码如下：
+我们尝试一下 `<script setup>` ，组件里的代码如下：
 ``` html
 <script setup=" props ">
   import { ref, toRefs } from 'vue'
