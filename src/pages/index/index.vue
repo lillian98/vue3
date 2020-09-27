@@ -17,7 +17,7 @@
     <Setup msg="hello"/>
 
     <view class="h3">
-      style-var语法糖:
+      style-vars语法糖:
     </view>
     <Styledemo :color = color @tap="changeColor"/>
   </view>
