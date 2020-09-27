@@ -1,11 +1,11 @@
 <template>
-  <button @click="showToast" class="btn">打开弹窗</button>  
-  <!-- to和index.html中的div id一致 -->
+  <button @tap="showToast" class="btn">打开弹窗</button>  
+  <!-- to 和 index 中的 view id一致 -->
   <teleport to="#teleportToast">
-    <div v-if="toastFlag" class="toast__wrap"  @click="hideToast">
-      <h2>弹窗标题：</h2>
-      <div class="toast__wrap--msg">欢迎{{ user }}，点击关闭</div>
-    </div>
+    <view v-if="toastFlag" class="toast__wrap"  @tap="hideToast">
+      <view class="h2">弹窗标题：</view>
+      <view class="toast__wrap--msg">欢迎{{ user }}，点击关闭</view>
+    </view>
   </teleport>
 </template>
 <style lang="scss">

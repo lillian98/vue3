@@ -47,7 +47,7 @@ const config = {
     }
   },
   h5: {
-    publicPath: '/',
+    publicPath: '/',//编译时如果放在根目录下修改为'./'
     staticDirectory: 'static',
     output: {
       chunkFilename: './js/[name].chunk.[hash:5].js'

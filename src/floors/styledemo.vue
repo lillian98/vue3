@@ -1,5 +1,5 @@
 <template>
-  <div class="text">文字颜色为{{ color }},点击后变为红色</div>
+  <view class="text">文字颜色为{{ color }},点击后变为红色</view>
 </template>
 
 <script>
@@ -8,11 +8,12 @@ export default {
   props:{
     color: {type: String}
   },
-   data(props) {
-    return {
-      color: ref(props)//'red'
-    }
-  },
+  // 不从父组件获取内容时定义color变量
+  //  data(props) {
+  //   return {
+  //     color: ref('red') 
+  //   }
+  // },
   setup(props){
     const { color } = toRefs(props)
     return {

@@ -1,18 +1,25 @@
 <template>
   <view class="index">
-    <!-- <text>{{ msg }}</text> -->
-    <h3>
+    <view class="h3">
       composition API:
-    </h3>
+    </view>
     <Case1 />
-    <h3>
+
+    <view class="h3">
       Teleport:
-    </h3>
+    </view>
     <Toast :user = username />
-    <h3>
+    <view id="teleportToast"></view>
+
+    <view class="h3">
+      setup语法糖:
+    </view>
+    <Setup msg="hello"/>
+
+    <view class="h3">
       style-var语法糖:
-    </h3>
-    <Styledemo :color = color @click="changeColor"/>
+    </view>
+    <Styledemo :color = color @tap="changeColor"/>
   </view>
 </template>
 
@@ -22,6 +29,7 @@ import { ref, computed, onMounted, toRefs, watch } from 'vue'
 import Case1 from "@/floors/case1"
 import Toast from "@/floors/toast"
 import Styledemo from "@/floors/styledemo"
+import Setup from "@/floors/setup"
 import './index.scss'
 
 export default {
@@ -29,6 +37,7 @@ export default {
     Case1,
     Toast,
     Styledemo,
+    Setup,
   },
   setup () {
     // const msg = ref('Hello Vue3')
@@ -54,9 +63,10 @@ export default {
 <style lang="scss">
 .index{
   padding: 20px;
-  h3{
-  font-size: 30px;
+  .h3 {
+    font-size: 30px;
+    font-weight: bold;
+    margin: 40px 0 0;
+  }
 }
-}
-
 </style>

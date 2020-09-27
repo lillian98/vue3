@@ -1,8 +1,9 @@
 <template>
-  <button @click="increment">
-    <p>当前todolist事项已有：{{ existCount }}条；</p>
-    <p>当前操作已新增：{{ count }} ，共有{{ total }}条。</p>
+  <button @tap="increment">
+    增加 1
   </button>
+  <view>当前todolist事项已有：{{ existCount }}条；</view>
+  <view>当前操作已新增：{{ count }} ，共有{{ total }}条。</view>
 </template>
 
 <script>
