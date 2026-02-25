@@ -24,7 +24,7 @@
 </template>
 
 <script>
-import { ref, computed, onMounted, toRefs, watch } from 'vue'
+import { ref } from 'vue'
 
 import Case1 from "@/floors/case1"
 import Toast from "@/floors/toast"
@@ -42,7 +42,6 @@ export default {
   setup () {
     // const msg = ref('Hello Vue3')
     const username = ref('user1')
-    const count = ref(0)
     const color = ref('blue')
     const changeColor = ()=>{
       color.value = 'red'

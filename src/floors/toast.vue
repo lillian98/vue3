@@ -27,7 +27,7 @@
 }
 </style>
 <script>
-import { ref,toRefs } from 'vue'
+import { ref, toRefs } from 'vue'
 export default {
   props:{
     user: {type: String}
@@ -37,7 +37,6 @@ export default {
     const { user } = toRefs(props)
     // Toast：显示flag
     const toastFlag = ref(false)
-    let timer
     const showToast = ()=>{
       toastFlag.value = true
     }

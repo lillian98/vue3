@@ -3,7 +3,7 @@
 </template>
 
 <script>
-import { ref,toRefs } from 'vue'
+import { toRefs } from 'vue'
 export default {
   props:{
     color: {type: String}

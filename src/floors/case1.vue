@@ -7,11 +7,11 @@
 </template>
 
 <script>
-import { ref, computed, onMounted, toRefs, watch } from 'vue'
+import { ref, computed, onMounted } from 'vue'
 
 export default {
   name: 'case1',
-  setup(props) {
+  setup() {
     // ref响应式变量
     const count = ref(0)
     const existCount = ref(4)
