@@ -7,17 +7,17 @@
   </view>
   
 </template>
-<script setup=" props ">
-  import { ref, toRefs } from 'vue'
-  export default{
-    props: {
-      msg: String,
-    },
-  }
-  export const count = ref(0)
-  export const info = ref(props.msg)
-  export const incAndChangeInfo = () => {
-    count.value++
-    info.value = "change hello" + count.value
-  }
+<script setup>
+import { ref } from 'vue'
+
+const props = defineProps({
+  msg: String,
+})
+
+const count = ref(0)
+const info = ref(props.msg)
+const incAndChangeInfo = () => {
+  count.value++
+  info.value = "change hello" + count.value
+}
 </script>
